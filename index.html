@@ -3,22 +3,41 @@
 <head>
     <meta charset="utf-8"/>
     <title>Reservia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="reservia_style.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
 </head>
     <body>
         <div id="bloc_page">
             <header> <!-- Header avec logo, descriptif et menu de navigation -->
-
-
+                <p><img src='images/logo/Reservia.svg' alt='logo reservia'  /></p>
+                <br/>
+                <p><h1>Trouvez votre hébergement pour des vavances de rêve</h1>
+                En plein centre ville ou en plein nature</p>
                 <nav>
 
-
+                <ul>
+                    <li><a href='#'>Hébergements</a></li>
+                    <li><a href='#'>Activités</a></li>
+                    <li><a href='#'>S'inscrire</a></li>
+                </ul>    
 
                 </nav>
             </header>
-
+            
             
             <section> <!-- Première section, avec le menu de recherche, les filtres et le 'i' -->
+
+                <form method='post' action='traitement.php'>
+                    <p>
+                        <label for='search'> <i class="fas fa-map-marker-alt" id='icon'></i> </label>
+                        <input type='search' name='search' id='search' placeholder='Marseille, France'size='30' maxlength='30' />                  
+                    </p>
+                    <input type="submit" value="Rechercher" />
+                </form>
+                
+
+
 
 
             </section> <!-- Fin de première section, avec le menu de recherche, les filtres et le 'i' -->
