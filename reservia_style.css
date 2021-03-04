@@ -1,4 +1,43 @@
-#icon /* Régle la taille des id='icon' des icônes en format svg */
+#map #eco #child #love #dog /* Régle la taille des id='icon' des icônes en format svg */
 {
     font-size: 1em; 
+   
+}
+
+#eco #child #love #dog
+{
+    color: #0065FC;
+}
+
+
+.hostingmaincardfigureimg /* Gère les images liées à cette class (taille temporaire le temps de finir le html */
+{
+    width: 190px;
+	height: 100px;
+}
+
+.hostingpopularcardfigureimg
+{
+    width: 100px;
+    height: 100px;
+}
+
+.hostingmaincardgradeicon[data-active=true]   /* Définit la couleur des étoiles de notation "remplies" (true) pour le main */
+{
+    color: #0065FC;
+}
+
+.hostingmaincardgradeicon[data-active=false] /* Définit la couleur des étoiles de notation "vides" (false) pour le main */
+{
+    color: #d9d9d9;
+}
+
+.hostingpopularcardgradeicon[data-active=true] /* Définit la couleur des étoiles de notation "remplies" (true) pour le popular */
+{
+    color: #0065FC;
+}
+
+.hostingpopularcardgradeicon[data-active=false] /* Définit la couleur des étoiles de notation "vides" (false) pour le popular */
+{
+    color: #d9d9d9;
 }
