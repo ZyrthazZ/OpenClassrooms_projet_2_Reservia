@@ -1,6 +1,6 @@
 #map #eco #child #love #dog /* Régle la taille des id='icon' des icônes en format svg */
 {
-    font-size: 1em; 
+    font-size: em; 
    
 }
 
@@ -9,7 +9,7 @@
     color: #0065FC;
 }
 
-
+.fas fa-money-bill-wave{    font-size: 5em;}
 .hostingmaincardfigureimg /* Gère les images liées à cette class (taille temporaire le temps de finir le html */
 {
     width: 190px;
@@ -20,6 +20,12 @@
 {
     width: 100px;
     height: 100px;
+}
+
+.activitiesmaincardfigureimg
+{
+    width: 170px;
+    height: 250px
 }
 
 .hostingmaincardgradeicon[data-active=true]   /* Définit la couleur des étoiles de notation "remplies" (true) pour le main */
