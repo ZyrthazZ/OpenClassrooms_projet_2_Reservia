@@ -1,6 +1,6 @@
-#map #eco #child #love #dog /* Régle la taille des id='icon' des icônes en format svg */
+#map, #eco, #child, #love, #dog /* Régle la taille des id='icon' des icônes en format svg */
 {
-    font-size: em; 
+    font-size: 1em; 
    
 }
 
