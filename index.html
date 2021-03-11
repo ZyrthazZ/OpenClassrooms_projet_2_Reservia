@@ -27,16 +27,26 @@
                 <section class="search"> <!-- Première section, avec le menu de recherche, les filtres et le 'i' -->
                     <header class="searchheader">
                         <h1 class="searchheadertitle">Trouvez votre hébergement pour des vavances de rêve</h1>
-                        <p class="searchheadersubtitle">En plein centre ville ou en plein nature</p>
+                        <p class="searchheadersubtitle">En plein centre ville ou en pleine nature</p>
                     </header>
                     
-                    <form class="searchformulaire" method='post' action='traitement.php'>
-                        <p>
-                            <label for='search'> <i class="fas fa-map-marker-alt" id="map" ></i> </label>
-                            <input type='search' name='search' id='search' placeholder='Marseille, France'size='30' maxlength='30' />                  
-                        </p>
-                        <input type="submit" value="Rechercher" />
-                    </form>
+                        <div class="searchformulaire">
+                        
+                            <div class="searchformulairemap"> <i class="fas fa-map-marker-alt" id="map" ></i> </div> 
+                                <form class="searchformulaireform" method='post' action='traitement.php'>
+                                    <input type='search' name='search' id='search' placeholder='Marseille, France' size='25' class="searchformulaireformarea" />
+                                </form>
+                                <input type="submit" value="Rechercher" class="searchformulairebutton"/>
+                        
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                    
                     <br/> <!-- Temporaire, relatif à la construction du html -->
                     <br/> <!-- Temporaire, relatif à la construction du html -->
                     
