@@ -1,61 +1,4 @@
-#map, #eco, #child, #love, #dog /* Régle la taille des id='icon' des icônes en format svg */
-{
-    font-size: 1em; 
-   
-}
-
-#eco #child #love #dog
-{
-    color: #0065FC;
-}
-
-.fas fa-money-bill-wave{    font-size: 5em;}
-.hostingmaincardfigureimg /* Gère les images liées à cette class (taille temporaire le temps de finir le html */
-{
-    width: 190px;
-	height: 100px;
-}
-
-.hostingpopularcardfigureimg
-{
-    width: 100px;
-    height: 100px;
-}
-
-.activitiesmaincardfigureimg
-{
-    width: 170px;
-    height: 250px
-}
-
-.hostingmaincardgradeicon[data-active=true]   /* Définit la couleur des étoiles de notation "remplies" (true) pour le main */
-{
-    color: #0065FC;
-}
-
-.hostingmaincardgradeicon[data-active=false] /* Définit la couleur des étoiles de notation "vides" (false) pour le main */
-{
-    color: #d9d9d9;
-}
-
-.hostingpopularcardgradeicon[data-active=true] /* Définit la couleur des étoiles de notation "remplies" (true) pour le popular */
-{
-    color: #0065FC;
-}
-
-.hostingpopularcardgradeicon[data-active=false] /* Définit la couleur des étoiles de notation "vides" (false) pour le popular */
-{
-    color: #d9d9d9;
-}
-
-.header, .headernav, .headersignup
-{
-    bor/der: 1px solid black
-}
-
-
-
-
+/* Éléments principaux de la page, police et taille */
 
 
 @font-face
@@ -81,20 +24,37 @@ h1
 }
 
 
-
 #bloc_page
 {
     width: 1300px;
     margin: auto;
 }
 
+/* Gère le header et le comportement des liens de la page */
+
 .header
-    {
+{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-    }
+        margin-top: 40px;
+}
 
+
+.headernavlink
+{
+    
+    padding: 35px;
+
+}
+
+.headersignup
+{
+    color: #0065FC;
+    font-weight: bold;
+}
+
+/* Gère le comportement des liens de la page et dans le header */
 
 a
 {
@@ -115,34 +75,19 @@ a[href="#activities"]:hover
     transition-duration: 0.2ms;
 }
 
-.header
-{
-    margin-top: 40px;
-}
-
-.headernavlink
-{
-    
-    padding: 35px;
-
-}
-
-.headersignup
-{
-    color: #0065FC;
-    font-weight: bold;
-}
+/* Gère le titre principal de la page */
 
 .searchheader
 {
     margin-top: 55px;
-    padding-bottom: ;
 }
 
 .searchheadertitle
 {
     margin-bottom: -8px;
 }
+
+/* Gère le champ de recherche de la page */
 
 #map
 {
@@ -193,19 +138,158 @@ a[href="#activities"]:hover
     border: none;
 }
 
+/* Gère le champ des filtres de la page */
+
+
+.searchfilters
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 900px;
+    
+    
+}
+
+.searchfilterstitle
+{
+    
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.searchfilterslinks
+{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.searchfilterslinkseco, .searchfilterslinksfamily, .searchfilterslinkslove, .searchfilterslinkspet
+{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+
+#eco, #child, #love, #dog
+{
+    padding-top: 10px;
+    font-size: 18px;
+    color: #0065FC;
+}
+
+
+.searchfilterslinkstext
+{
+    
+    padding: 8px 20px 10px 20px;
+    border: 1.5px solid  #F2F2F2;
+    border-left: none;
+    border-radius: 0px 20px 20px 0px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.searchfilterslinkssvg
+{
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    background-color: #DEEBFF;
+    border-radius: 20px 20px 20px 20px;
+    margin-right: -14px;
+}
+
+.searchfilterslinkstext:hover /* Définit le comportement des liens de Filtres au survol */
+{
+    font-style: italic;
+}
+
+/* Gère le champ de résultat de recherche de la page */
+
+
+.search_i_icon
+{
+    border: 1px solid #F2F2F2;
+    color: #0065FC;
+    font-weight: bold;
+    border-radius: 100%;
+    padding: 1px;
+    margin-left: ;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.searchresult
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.searchresultwrapicon
+{
+    height: 20px;
+    width: 20px;
+    min-height: 15px;
+    min-width: 15px;
+    border: solid 1px #d9d9d9;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    color: #0065FC;
+}
 
 
 
 
+/* TEMPORAIRE */
+
+.hostingmaincardfigureimg /* Gère les images liées à cette class (taille temporaire le temps de finir le html */
+{
+    width: 190px;
+	height: 100px;
+}
+
+.hostingpopularcardfigureimg
+{
+    width: 100px;
+    height: 100px;
+}
+
+.activitiesmaincardfigureimg
+{
+    width: 170px;
+    height: 250px
+}
+
+.hostingmaincardgradeicon[data-active=true]   /* Définit la couleur des étoiles de notation "remplies" (true) pour le main */
+{
+    color: #0065FC;
+}
+
+.hostingmaincardgradeicon[data-active=false] /* Définit la couleur des étoiles de notation "vides" (false) pour le main */
+{
+    color: #d9d9d9;
+}
+
+.hostingpopularcardgradeicon[data-active=true] /* Définit la couleur des étoiles de notation "remplies" (true) pour le popular */
+{
+    color: #0065FC;
+}
+
+.hostingpopularcardgradeicon[data-active=false] /* Définit la couleur des étoiles de notation "vides" (false) pour le popular */
+{
+    color: #d9d9d9;
+}
 
 
-
-
-
-
-
-
-
+/* FIN DU TEMPORAIRE */
 
 
 /* Nouvelles règles si la fenêtre fait au plus 1024px de large */
