@@ -259,10 +259,10 @@ a[href="#activities"]:hover
 
              /* Gère les images liées à cette class (taille temporaire le temps de finir le html */
 
-./hostingpopularcardfigureimg
+.hostingpopularcardfigureimg
 {
-    width: 100px;
-    height: 100px;
+    
+    
 }
 
 ./activitiesmaincardfigureimg
@@ -340,6 +340,7 @@ a[href="#activities"]:hover
 .hostingmaincardtext
 {
     margin-left: 8px;
+    font-size: 14px;
 }
 
 .hostingmaincardfigurecaption
@@ -378,6 +379,76 @@ a[href="#activities"]:hover
 .hostingpopularcardgradeicon[data-active=false] /* Définit la couleur des étoiles de notation "vides" (false) pour le popular */
 {
     color: #d9d9d9;
+}
+
+
+/* Gère la catégorie "populaires" */
+
+.hosting
+{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.hostingpopular
+{
+    background-color: #F2F2F2;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    margin-top: 40px;
+    padding-bottom: 50px;
+    border-radius: 20px;
+}
+
+.hostingpopularheader
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.hostingpopularcardfigure 
+{
+    display: flex;
+    background-color: white;
+    width: 310px;
+    height: 120px;
+    border: 3px solid white;
+    border-radius: 25px;
+    overflow: hidden;
+    
+}
+
+.hostingpopularcardfigureimg
+{
+    object-fit: cover;
+    width: 110px;
+    height: 120px;
+}
+
+.hostingpopularcardtext
+{
+    width: 50%;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: -10px;
+}
+
+.hostingpopularcarddesc
+{
+    margin-top: -10px;
+}
+
+.hostingpopularcardgrade
+{
+    margin-top: 30px;
 }
 
 /* Nouvelles règles si la fenêtre fait au plus 1024px de large */
