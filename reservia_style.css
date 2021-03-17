@@ -30,6 +30,12 @@ h1
     margin: auto;
 }
 
+.main
+{
+    max-width: 1440px;
+    margin: auto;
+}
+
 /* Gère le header et le comportement des liens de la page */
 
 .header
@@ -185,13 +191,13 @@ a[href="#activities"]:hover
 
 .searchfilterslinkstext
 {
-    
     padding: 8px 20px 10px 20px;
-    border: 1.5px solid  #F2F2F2;
+    border: 2px solid  #F2F2F2;
     border-left: none;
     border-radius: 0px 20px 20px 0px;
     font-size: 16px;
     font-weight: bold;
+    
 }
 
 .searchfilterslinkssvg
@@ -202,6 +208,7 @@ a[href="#activities"]:hover
     background-color: #DEEBFF;
     border-radius: 20px 20px 20px 20px;
     margin-right: -14px;
+    
 }
 
 .searchfilterslinkstext:hover /* Définit le comportement des liens de Filtres au survol */
@@ -250,22 +257,107 @@ a[href="#activities"]:hover
 
 /* TEMPORAIRE */
 
-.hostingmaincardfigureimg /* Gère les images liées à cette class (taille temporaire le temps de finir le html */
-{
-    width: 190px;
-	height: 100px;
-}
+             /* Gère les images liées à cette class (taille temporaire le temps de finir le html */
 
-.hostingpopularcardfigureimg
+./hostingpopularcardfigureimg
 {
     width: 100px;
     height: 100px;
 }
 
-.activitiesmaincardfigureimg
+./activitiesmaincardfigureimg
 {
     width: 170px;
     height: 250px
+}
+
+
+/* FIN DU TEMPORAIRE */
+
+/* Gère les "cards" de "Hébergements à Marseille */
+
+.hostingmain
+{
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    margin-top: 40px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-flow: wrap;
+    width: 65%;
+    height: 100%;
+    
+}
+
+.hostingmainheader
+{
+    position: absolute;
+    font-weight: bolder;
+    margin-left: 50px;
+    margin-bottom: 0px;
+}
+
+.hostingmainfooter
+{
+    position: absolute;
+    padding-top: 530px;
+    padding-left: 50px;
+    font-weight: bolder;
+}
+
+.hostingmaincard
+{
+    margin-top: 60px;
+    margin-left: 30px;
+    margin-bottom: -25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hostingmaincardfigure
+{
+    justify-content: ;
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 25px;
+    
+    width: 210px; 
+    height: 180px;
+    
+    margin-right: 5px;
+    margin-left: 15px;
+    overflow: hidden;
+}
+
+.hostingmaincardfigureimg
+{
+    width: 100%;
+	height: 60%;
+    object-fit: cover;
+    margin-bottom: -10px;
+}
+
+.hostingmaincardtext
+{
+    margin-left: 8px;
+}
+
+.hostingmaincardfigurecaption
+{
+    font-size: 14px;
+    font-weight: 1000;
+    padding-top: -px;
+    margin-bottom: -15px;
+}
+
+.hostingmaincarddesc
+{
+    margin-bottom: -1px;
+}
+
+.hostingmaincardgrade
+{
+    font-size: 14px;
 }
 
 .hostingmaincardgradeicon[data-active=true]   /* Définit la couleur des étoiles de notation "remplies" (true) pour le main */
@@ -288,13 +380,9 @@ a[href="#activities"]:hover
     color: #d9d9d9;
 }
 
-
-/* FIN DU TEMPORAIRE */
-
-
 /* Nouvelles règles si la fenêtre fait au plus 1024px de large */
 
-@media screen and (max-width: 1024px)
+@media scre/en and (max-width: 1024px)
 {
     #bloc_page
     {
