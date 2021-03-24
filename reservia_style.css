@@ -26,7 +26,7 @@ h1
 
 #bloc_page
 {
-    width: 1300px;
+    width: 1300px;  /* !!!!!!!!!! PASSER EN 1240 ET FAIRE MODIFS */
     margin: auto;
 }
 
@@ -320,7 +320,7 @@ a[href="#activities"]:hover
     background-color: white;
     border: 5px solid white;
     border-radius: 25px;
-    
+    box-shadow: 0 0 20px #0000002e;
     width: 210px; 
     height: 180px;
     
@@ -418,6 +418,7 @@ a[href="#activities"]:hover
 {
     display: flex;
     background-color: white;
+    box-shadow: 0 0 20px #0000002e;
     width: 310px;
     height: 120px;
     border: 3px solid white;
@@ -451,9 +452,110 @@ a[href="#activities"]:hover
     margin-top: 30px;
 }
 
+
+/* Gère le activities de la page */
+
+.activitiesmain
+{
+    width: 100%;
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-template-rows: 60px 225px 25px 30px 200px;
+    
+}
+
+    
+
+
+.activitiescard 
+{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #0000002e;
+}
+
+
+/* Un élément parent en position relative permet de placer à l'intérieur les éléments comme on le veut avec la position absolute. 
+Si l'élément parent est lui-même dans un élément flex, on rajoute flex : 1 par exemple pour appliquer. 
+Ici, cela permet de faire en sorte que les images dans les div .activitiesmaincard s'adaptent automatiquement lorsque l'on change la disposition en grid. 
+*/
+
+.activitiescardimg
+{
+    position: relative;
+    flex: 1;
+}
+
+.activitiescardimgimg
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*  Fin de la théorie */
+
+
+.activitiescardtitle
+{
+    text-align: ;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+.activitiesmainheadertitle
+{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.activitiescard01
+{
+    grid-column: 1 / 2;
+    grid-row: 2 / 6;
+}
+
+.activitiescard02
+{
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+}
+
+.activitiescard03
+{
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+}
+
+.activitiescard04
+{
+    grid-column: 3 / 4;
+    grid-row: 2 / 6;
+}
+
+.activitiescard05
+{
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+}
+
+.activitiescard06
+{
+    grid-column: 4 / 5;
+    grid-row: 4 / 6;
+}
+
 /* Nouvelles règles si la fenêtre fait au plus 1024px de large */
 
-@media scre/en and (max-width: 1024px)
+@media screen and (max-width: 1024px)
 {
     #bloc_page
     {
@@ -497,4 +599,26 @@ a[href="#activities"]:hover
     
     
     
+}
+
+@media screen and (max-width: 568px) {
+    .header {
+        position: relative;
+        display: block;
+    }
+    header nav {
+        display: block; 
+        width: 100vw;
+        border-bottom: 1px solid lightgray;
+    }
+    header nav > a {
+        width: 50%;
+        padding-bottom: 10px;
+    }
+    header nav > a:last-child {
+        position: absolute;
+        top: 0px;
+        right: 5px;
+        width: auto;
+    }
 }
