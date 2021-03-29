@@ -24,15 +24,15 @@ h1
 }
 
 
-#bloc_page
+#bloc_/page
 {
-    width: 1300px;  /* !!!!!!!!!! PASSER EN 1240 ET FAIRE MODIFS */
+    width: 1240px;  /* !!!!!!!!!! PASSER EN 1240 ET FAIRE MODIFS */
     margin: auto;
 }
 
-.main
+main
 {
-    max-width: 1440px;
+    max-width: 1240px;
     margin: auto;
 }
 
@@ -40,6 +40,8 @@ h1
 
 .header
 {
+        width: 1240px;
+        margin: auto;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -121,7 +123,6 @@ a[href="#activities"]:hover
 {
     width: 250px;
     padding: 12.4px;
-    margin: ;
     border: 2px solid #F2F2F2;
     border-left: none;
     border-right: none;
@@ -226,7 +227,6 @@ a[href="#activities"]:hover
     font-weight: bold;
     border-radius: 100%;
     padding: 1px;
-    margin-left: ;
     margin-right: 20px;
     text-align: center;
 }
@@ -255,24 +255,6 @@ a[href="#activities"]:hover
 
 
 
-/* TEMPORAIRE */
-
-             /* Gère les images liées à cette class (taille temporaire le temps de finir le html */
-
-.hostingpopularcardfigureimg
-{
-    
-    
-}
-
-./activitiesmaincardfigureimg
-{
-    width: 170px;
-    height: 250px
-}
-
-
-/* FIN DU TEMPORAIRE */
 
 /* Gère les "cards" de "Hébergements à Marseille */
 
@@ -286,7 +268,6 @@ a[href="#activities"]:hover
     flex-flow: wrap;
     width: 65%;
     height: 100%;
-    
 }
 
 .hostingmainheader
@@ -308,7 +289,7 @@ a[href="#activities"]:hover
 .hostingmaincard
 {
     margin-top: 60px;
-    margin-left: 30px;
+    margin-left: 20px;
     margin-bottom: -25px;
     display: flex;
     flex-direction: column;
@@ -316,14 +297,12 @@ a[href="#activities"]:hover
 
 .hostingmaincardfigure
 {
-    justify-content: ;
     background-color: white;
     border: 5px solid white;
     border-radius: 25px;
     box-shadow: 0 0 20px #0000002e;
     width: 210px; 
     height: 180px;
-    
     margin-right: 5px;
     margin-left: 15px;
     overflow: hidden;
@@ -420,12 +399,14 @@ a[href="#activities"]:hover
     background-color: white;
     box-shadow: 0 0 20px #0000002e;
     width: 310px;
-    height: 120px;
+    margin-left: -0px;    /* POURQUOI CA FAIT CA??? */
+    margin-left: 25px;    /* POURQUOI CA FAIT CA??? */
     border: 3px solid white;
     border-radius: 25px;
     overflow: hidden;
     
 }
+
 
 .hostingpopularcardfigureimg
 {
@@ -504,7 +485,6 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
 
 .activitiescardtitle
 {
-    text-align: ;
     margin-left: 10px;
     font-size: 20px;
     font-weight: bolder;
@@ -552,6 +532,64 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
     grid-column: 4 / 5;
     grid-row: 4 / 6;
 }
+
+
+/* Gère le footer de la page */ 
+
+
+.footer
+{
+    background-color: #F2F2F2;
+    width: 100%;
+    margin-top: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+   
+}
+
+.footerdiv
+{
+    display: flex;
+    justify-content: space-between;
+    width: 1240px;
+    margin: auto;
+}
+
+.footeraboutlinks, .footerourhostingslinks, .footerassistlinks
+{
+    display: flex;
+    flex-direction: column; 
+}
+
+.footerourhostings
+{
+    margin-left: -100px;
+}
+
+.footerassist
+{
+    margin-right: 100px;
+}
+
+.footer h2
+{
+    font-size: 18px;
+    font-weight: 900;
+    
+}
+
+.footer a
+{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.footer a:hover
+{
+    text-decoration: underline;
+}
+
+
 
 /* Nouvelles règles si la fenêtre fait au plus 1024px de large */
 
