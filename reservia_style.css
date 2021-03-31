@@ -24,11 +24,6 @@ h1
 }
 
 
-#bloc_/page
-{
-    width: 1240px;  /* !!!!!!!!!! PASSER EN 1240 ET FAIRE MODIFS */
-    margin: auto;
-}
 
 main
 {
@@ -49,12 +44,9 @@ main
 }
 
 
-.headernavlink
-{
-    
-    padding: 35px;
 
-}
+
+
 
 .headersignup
 {
@@ -70,18 +62,36 @@ a
     text-decoration: none;
 }
 
-a[href="#hosting"]
+
+
+@media screen and (min-width: 1100px)
+{
+    a[href="#hosting"]
 {
     color: #0065FC;
     border-top: 3px solid #0065FC;
 }
-
-a[href="#activities"]:hover
+    
+    
+    
+    a[href="#activities"]:hover
 {
     color: #0065FC;
     border-top: 3px solid #0065FC;
     transition-duration: 0.2ms;
 }
+
+.headernavlink
+{
+    padding: 35px;
+}
+
+.headernav
+{
+    margin-left: 750px;
+}
+}
+
 
 /* Gère le titre principal de la page */
 
@@ -593,7 +603,7 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
 
 /* Nouvelles règles si la fenêtre fait au plus 1024px de large */
 
-@media screen and (max-width: 1024px)
+@media scr/een and (max-width: 1024px)
 {
     #bloc_page
     {
@@ -626,37 +636,77 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
     {
         
     }
-    
-    
-    
-    
-	
-	
-    
-    
-    
-    
+ 
     
 }
 
-@media screen and (max-width: 568px) {
-    .header {
-        position: relative;
+
+
+@media screen and (max-width: 568px) 
+{
+    
+    /* Gère le header sur les appareils d'une taille max de 568px */
+    
+    .header 
+    {
         display: block;
+        max-width: 400px;
+        margin: auto;
     }
-    header nav {
-        display: block; 
-        width: 100vw;
-        border-bottom: 1px solid lightgray;
+    
+    .headerimg
+    {
+        padding: 10px
+        
     }
-    header nav > a {
-        width: 50%;
-        padding-bottom: 10px;
-    }
-    header nav > a:last-child {
-        position: absolute;
-        top: 0px;
-        right: 5px;
+    
+    .headersignup
+    {
+        position: relative;
+        top: -80px;
+        right: -300px;
         width: auto;
     }
+        
+    
+    .headernav
+    {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 10px
+    }
+    
+    
+    .firstlink
+    {
+        color: #0065FC;
+        border-bottom: 2px solid #0065FC;
+        width: 50%;
+        padding-left: 50px;
+        padding-bottom: 0px;
+    }
+    
+    .secondlink
+    {
+        width: 50%;
+        padding-left: 60px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid lightgrey;
+    }
+    
+    .secondlink:hover
+    {
+        color: #0065FC;
+        border-bottom: 2px solid #0065FC;
+    }
+    
+    
+    /*  */
+    
 }
+
+
+
+
+@media screen and (max-width: 1100px) 
