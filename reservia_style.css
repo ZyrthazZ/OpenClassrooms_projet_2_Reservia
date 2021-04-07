@@ -24,7 +24,6 @@ h1
 }
 
 
-
 main
 {
     max-width: 1240px;
@@ -43,16 +42,12 @@ main
         margin-top: 40px;
 }
 
-
-
-
-
-
 .headersignup
 {
     color: #0065FC;
     font-weight: bold;
 }
+
 
 /* Gère le comportement des liens de la page et dans le header */
 
@@ -81,6 +76,14 @@ a
     transition-duration: 0.2ms;
 }
 
+.headersignup
+{
+    position: relative;
+    top: -29px;
+    right: -1070px
+}
+
+
 .headernavlink
 {
     padding: 35px;
@@ -88,8 +91,9 @@ a
 
 .headernav
 {
-    margin-left: 750px;
+    margin-right: 70px;
 }
+
 }
 
 
@@ -117,6 +121,7 @@ a
 {
     display: flex;
     flex-direction: row;
+    width: 100vw;
 }
 
 .searchformulairemap
@@ -142,17 +147,40 @@ a
     
 }
 
+
 .searchformulairebutton
 {
-    background-color: #0065FC;
+    display: flex;
+}
+
+.searchformulairebuttontextdesktop
+{
+    margin-left: -110px;
     font-family: "Raleway";
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     color: white;
+    
+}
+
+.searchformulairebuttoninput
+{
+    background-color: #0065FC;
+    color: white;
     width: 130px;
+    height: 49.5px;
     border-radius: 0 15px 15px 0;
     box-shadow: 15px 15px 15px white;
     border: none;
+}
+
+
+@media screen and (min-width: 1100px)
+{
+    .searchformulairebuttontextmobile
+{
+    display: none;
+}
 }
 
 /* Gère le champ des filtres de la page */
@@ -160,11 +188,10 @@ a
 
 .searchfilters
 {
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 900px;
-    
     
 }
 
@@ -182,6 +209,7 @@ a
    flex-direction: row;
    justify-content: space-between;
    align-items: center;
+    width: -moz-fit-content;
 }
 
 .searchfilterslinkseco, .searchfilterslinksfamily, .searchfilterslinkslove, .searchfilterslinkspet
@@ -222,6 +250,21 @@ a
     
 }
 
+@media screen and (min-width: 1100px)
+{
+    .searchfilterstitle
+    {
+        position: relative;
+        top: 48px;
+    }
+    
+    .searchfilters
+    {
+        position: relative;
+        left: 100px
+    }
+}
+
 .searchfilterslinkstext:hover /* Définit le comportement des liens de Filtres au survol */
 {
     font-style: italic;
@@ -229,17 +272,6 @@ a
 
 /* Gère le champ de résultat de recherche de la page */
 
-
-.search_i_icon
-{
-    border: 1px solid #F2F2F2;
-    color: #0065FC;
-    font-weight: bold;
-    border-radius: 100%;
-    padding: 1px;
-    margin-right: 20px;
-    text-align: center;
-}
 
 .searchresult
 {
@@ -251,8 +283,6 @@ a
 {
     height: 20px;
     width: 20px;
-    min-height: 15px;
-    min-width: 15px;
     border: solid 1px #d9d9d9;
     border-radius: 100%;
     display: flex;
@@ -260,6 +290,7 @@ a
     justify-content: center;
     margin-right: 10px;
     color: #0065FC;
+    font-size: 12px;
 }
 
 
@@ -601,45 +632,6 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
 
 
 
-/* Nouvelles règles si la fenêtre fait au plus 1024px de large */
-
-@media scr/een and (max-width: 1024px)
-{
-    #bloc_page
-    {
-        width: 600px;
-        margin: auto;
-    }
-    
-    
-    .header
-    {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        
-    }
-    
-    .header 
-    {
-        align-self: baseline;
-        
-        
-    }
-    
-    .headerimg
-    {
-        order: ;
-    }
-    
-    .headernav
-    {
-        
-    }
- 
-    
-}
-
 
 
 @media screen and (max-width: 568px) 
@@ -650,30 +642,32 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
     .header 
     {
         display: block;
-        max-width: 400px;
+        width: 100vw;
         margin: auto;
     }
     
-    .headerimg
+    .headerimgsignup
     {
-        padding: 10px
-        
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
     }
+    
+    
     
     .headersignup
     {
-        position: relative;
-        top: -80px;
-        right: -300px;
-        width: auto;
+        margin-right: 30px;
+        margin-top: 15px
     }
         
+    
     
     .headernav
     {
         display: flex;
         justify-content: space-around;
-        width: 100%;
+        width: 100vw;
         margin-top: 10px
     }
     
@@ -683,14 +677,14 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
         color: #0065FC;
         border-bottom: 2px solid #0065FC;
         width: 50%;
-        padding-left: 50px;
+        text-align: center;
         padding-bottom: 0px;
     }
     
     .secondlink
     {
         width: 50%;
-        padding-left: 60px;
+        text-align: center;
         padding-bottom: 10px;
         border-bottom: 2px solid lightgrey;
     }
@@ -702,8 +696,84 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
     }
     
     
-    /*  */
+    /* Gère le comportement du titre principal de la page sur les appareils d'une taille max de 568px */
     
+    main 
+    {
+        width: 100vw;
+        margin-top: 30px;
+    }
+    
+    .search 
+    {
+        width: 90%;
+        margin: auto;
+    }
+    
+    .searchheader
+    {
+        margin-top: -10px;
+        margin: auto;
+    }
+    
+    
+    /* Gère le comportement du champ de recherche sur les appareils d'une taille de 568px */
+    
+    .searchformulaire
+    {
+        margin-top: 30px;
+    }
+    
+    .searchformulaireformarea
+    {
+        width: 220px;
+    }
+    
+    .searchformulairebuttoninput
+    {
+        width: 50px;
+    }
+    
+    .searchformulairebuttontextmobile
+    {
+        margin-left: -32px;
+        font-family: "Raleway";
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .searchformulairebuttontextdesktop
+    {
+        display: none;
+    }    
+    
+    /* Gère le comportement des filtres sur les appareils d'une taille de 568px */
+    
+    .searchfilters 
+    {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    
+    .searchfilterslinks 
+    {
+        margin: 5px;
+    }
+    
+    /* Gère le comportement du résultat des recherches sur les appareils d'une taille de 568px */
+    
+    .searchresultwrapicon
+    {
+        font-size: 9px;
+    }
+    
+    
+    
+    
+    
+
 }
 
 

@@ -10,19 +10,21 @@
     <body>
         <div id="bloc_page">
             <header class="header"> <!-- Header avec logo et menu de navigation -->
-                <img class="headerimg" src='images/logo/Reservia.svg' alt='logo reservia'  /> 
-             
+                <div class="headerimgsignup">
+                <img class="headerimg" src='images/logo/Reservia.svg' alt='logo reservia'  />
+                <a class="headersignup" href='#'>S'inscrire</a>
+                </div>
                 <nav class="headernav">
 
                     <a class="headernavlink firstlink" href='#hosting'>Hébergements</a>
                     <a class="headernavlink secondlink" href='#activities'>Activités</a>
                     
                 </nav>
-                <a class="headersignup" href='#'>S'inscrire</a>
+                
             </header>
             
             
-            <main class="content"> <!-- Balise main contenant toute la page excépté le header et le footer -->
+                <main class="content"> <!-- Balise main contenant toute la page excépté le header et le footer -->
                 
                 <section class="search"> <!-- Première section, avec le menu de recherche, les filtres et le 'i' -->
                     <header class="searchheader">
@@ -36,15 +38,21 @@
                                 <form class="searchformulaireform" method='post' action='traitement.php'>
                                     <input type='search' name='search' id='search' placeholder='Marseille, France' size='25' class="searchformulaireformarea" />
                                 </form>
-                                <input type="submit" value="Rechercher" class="searchformulairebutton"/>
-                        
+                                
+                                <span class="searchformulairebutton">
+                                
+                                <input type="submit" value="" class="searchformulairebuttoninput"/>
+                                
+                                <p class="searchformulairebuttontextdesktop">Rechercher</p>
+                                
+                                <p class="searchformulairebuttontextmobile"><i class="fas fa-search"></i></p>
+                                
+                                </span>
                         </div>                                                                                                                                                                    
                     
-                    <br/> <!-- Temporaire, relatif à la construction du html -->
-                    
-                    
-                    <div class="searchfilters">
-                        <h2 class="searchfilterstitle">Filtres</h2> 
+                        <h2 class="searchfilterstitle">Filtres</h2>
+                         <div class="searchfilters">
+                         
                             <span class="searchfilterslinks"> <a class="searchfilterslinkseco" href="#" > <div class="searchfilterslinkssvg"> <i class="fas fa-money-bill-wave" id="eco"></i> </div> <span class="searchfilterslinkstext"> Économique </span></a> </span> 
                             <span class="searchfilterslinks"> <a class="searchfilterslinksfamily" href="#" > <div class="searchfilterslinkssvg"> <i class="fas fa-child" id="child"></i> </div> <span class="searchfilterslinkstext"> Familial </span></a> </span>
                             <span class="searchfilterslinks"> <a class="searchfilterslinkslove" href="#" > <div class="searchfilterslinkssvg"> <i class="fas fa-heart" id="love"></i> </div> <span class="searchfilterslinkstext"> Romantique </span></a> </span>
