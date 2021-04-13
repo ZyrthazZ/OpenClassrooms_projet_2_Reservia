@@ -236,7 +236,6 @@ a
     border-radius: 0px 20px 20px 0px;
     font-size: 16px;
     font-weight: bold;
-    
 }
 
 .searchfilterslinkssvg
@@ -869,6 +868,7 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
         position: relative;
         font-weight: bolder;
         width: 100vw;
+        margin-top: -25px;
         margin-left: 20px;
     }
 
@@ -913,9 +913,98 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
     {
         font-size: 14px;
         font-weight: 1000;
-        padding-top: -px;
         margin-bottom: -15px;
     }
+    
+    /* Gère le comportement de activities sur les appareils de 568 px */
+    
+    .activitiesmain 
+    {
+        display: flex;
+        flex-flow: column;
+        margin-left: 10px;
+    }
+    
+    .activitiescard
+    {
+        width: 90vw;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    
+    .activitiescardtitle
+    {
+        margin-left: 10px;
+        font-size: 15px;
+        font-weight: bolder;
+    }
+    
+    
+    /* Gère le footer sur les appareils d'une taille de 568px */
+    
+    .footer
+    {
+        background-color: #F2F2F2;
+        width: 100vw;
+        margin-top: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+   
+    }
+
+    .footerdiv
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100vw;
+        margin: auto;
+    }
+
+    .footeraboutlinks, .footerourhostingslinks, .footerassistlinks
+    {
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .footerabout, .footerourhostings, .footerassist
+    {
+        margin: 20px 0 0 20px;
+    }
+    
+    .footerourhostings
+    {
+        margin-left: 20px;
+    }
+
+    .footerassist
+    {
+        margin-right: 0px;
+    }
+
+    .footer h2
+    {   
+        font-size: 16px;
+        font-weight: 900;
+    }
+
+    .footer a
+    {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .footer a:hover
+    {
+        text-decoration: underline;
+    }
+
+    #bloc_page
+    {
+        width: 375px;
+    }
+    
+    
 }
 
 
