@@ -1,0 +1,1013 @@
+/* Éléments principaux de la page, police et taille */
+
+
+@font-face
+{
+	font-family: "Raleway";
+	src: url("police/raleway/Raleway-VariableFont_wght.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+body
+{
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    
+}
+
+h1
+{
+    
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+main
+{
+    max-width: 1240px;
+    margin: auto;
+}
+
+/* Gère le header et le comportement des liens de la page */
+
+.header
+{
+        width: 1240px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 40px;
+}
+
+.headersignup
+{
+    color: #0065FC;
+    font-weight: bold;
+}
+
+
+/* Gère le comportement des liens de la page et dans le header */
+
+a
+{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+@media screen and (min-width: 1100px)
+{
+    a[href="#hosting"]
+{
+    color: #0065FC;
+    border-top: 3px solid #0065FC;
+}
+    
+    
+    
+    a[href="#activities"]:hover
+{
+    color: #0065FC;
+    border-top: 3px solid #0065FC;
+    transition-duration: 0.2ms;
+}
+
+.headersignup
+{
+    position: relative;
+    top: -29px;
+    right: -1070px
+}
+
+
+.headernavlink
+{
+    padding: 35px;
+}
+
+.headernav
+{
+    margin-right: 70px;
+}
+
+}
+
+
+/* Gère le titre principal de la page */
+
+.searchheader
+{
+    margin-top: 55px;
+}
+
+.searchheadertitle
+{
+    margin-bottom: -8px;
+}
+
+/* Gère le champ de recherche de la page */
+
+#map
+{
+    font-size: 18px;
+    padding-top: 15px;
+}
+
+.searchformulaire
+{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
+.searchformulairemap
+{
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    background-color: #F2F2F2;
+    border-radius: 15px 0 0 15px;
+}
+
+
+.searchformulaireformarea
+{
+    width: 250px;
+    padding: 12.4px;
+    border: 2px solid #F2F2F2;
+    border-left: none;
+    border-right: none;
+    font-family: "Raleway";
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+
+
+.searchformulairebutton
+{
+    display: flex;
+}
+
+.searchformulairebuttontextdesktop
+{
+    margin-left: -110px;
+    font-family: "Raleway";
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    
+}
+
+.searchformulairebuttoninput
+{
+    background-color: #0065FC;
+    color: white;
+    width: 130px;
+    height: 49.5px;
+    border-radius: 0 15px 15px 0;
+    box-shadow: 15px 15px 15px white;
+    border: none;
+}
+
+
+@media screen and (min-width: 1100px)
+{
+    .searchformulairebuttontextmobile
+{
+    display: none;
+}
+}
+
+/* Gère le champ des filtres de la page */
+
+
+.searchfilters
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 900px;
+    
+}
+
+.searchfilterstitle
+{
+    
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.searchfilterslinks
+{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+    width: -moz-fit-content;
+}
+
+.searchfilterslinkseco, .searchfilterslinksfamily, .searchfilterslinkslove, .searchfilterslinkspet
+{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+
+#eco, #child, #love, #dog
+{
+    padding-top: 10px;
+    font-size: 18px;
+    color: #0065FC;
+}
+
+
+.searchfilterslinkstext
+{
+    padding: 8px 20px 10px 20px;
+    border: 2px solid  #F2F2F2;
+    border-left: none;
+    border-radius: 0px 20px 20px 0px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.searchfilterslinkssvg
+{
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    background-color: #DEEBFF;
+    border-radius: 20px 20px 20px 20px;
+    margin-right: -14px;
+    
+}
+
+@media screen and (min-width: 1100px)
+{
+    .searchfilterstitle
+    {
+        position: relative;
+        top: 48px;
+    }
+    
+    .searchfilters
+    {
+        position: relative;
+        left: 100px
+    }
+}
+
+.searchfilterslinkstext:hover /* Définit le comportement des liens de Filtres au survol */
+{
+    font-style: italic;
+}
+
+/* Gère le champ de résultat de recherche de la page */
+
+
+.searchresult
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.searchresultwrapicon
+{
+    height: 20px;
+    width: 20px;
+    border: solid 1px #d9d9d9;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    color: #0065FC;
+    font-size: 12px;
+}
+
+
+
+
+
+/* Gère les "cards" de "Hébergements à Marseille */
+
+.hostingmain
+{
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    margin-top: 40px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-flow: wrap;
+    width: 65%;
+    height: 515px;
+}
+
+.hostingmainheader
+{
+    position: absolute;
+    font-weight: bolder;
+    margin-left: 50px;
+    margin-bottom: 0px;
+}
+
+.hostingmainfooter
+{
+    position: relative;
+    top: 20px;
+    left: 0px;
+    font-weight: bolder;
+}
+
+.hostingmaincard
+{
+    margin-top: 60px;
+    margin-left: 20px;
+    margin-bottom: -25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hostingmaincardfigure
+{
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 25px;
+    box-shadow: 0 0 20px #0000002e;
+    width: 210px; 
+    height: 180px;
+    margin-right: 5px;
+    margin-left: 15px;
+    overflow: hidden;
+}
+
+.hostingmaincardfigureimg
+{
+    width: 100%;
+	height: 60%;
+    object-fit: cover;
+    margin-bottom: -10px;
+}
+
+.hostingmaincardtext
+{
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+.hostingmaincardfigurecaption
+{
+    font-size: 14px;
+    font-weight: 1000;
+    padding-top: -px;
+    margin-bottom: -15px;
+}
+
+.hostingmaincarddesc
+{
+    margin-bottom: -1px;
+}
+
+.hostingmaincardgrade
+{
+    font-size: 14px;
+}
+
+.hostingmaincardgradeicon[data-active=true]   /* Définit la couleur des étoiles de notation "remplies" (true) pour le main */
+{
+    color: #0065FC;
+}
+
+.hostingmaincardgradeicon[data-active=false] /* Définit la couleur des étoiles de notation "vides" (false) pour le main */
+{
+    color: #d9d9d9;
+}
+
+.hostingpopularcardgradeicon[data-active=true] /* Définit la couleur des étoiles de notation "remplies" (true) pour le popular */
+{
+    color: #0065FC;
+}
+
+.hostingpopularcardgradeicon[data-active=false] /* Définit la couleur des étoiles de notation "vides" (false) pour le popular */
+{
+    color: #d9d9d9;
+}
+
+
+/* Gère la catégorie "populaires" */
+
+.hosting
+{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.hostingpopular
+{
+    background-color: #F2F2F2;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    margin-top: 40px;
+    padding-bottom: 50px;
+    border-radius: 20px;
+}
+
+.hostingpopularheader
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.hostingpopularcardfigure 
+{
+    display: flex;
+    background-color: white;
+    box-shadow: 0 0 20px #0000002e;
+    width: 310px;
+    margin-left: -0px;    /* POURQUOI CA FAIT CA??? */
+    margin-left: 25px;    /* POURQUOI CA FAIT CA??? */
+    border: 3px solid white;
+    border-radius: 25px;
+    overflow: hidden;
+    
+}
+
+
+.hostingpopularcardfigureimg
+{
+    object-fit: cover;
+    width: 110px;
+    height: 120px;
+}
+
+.hostingpopularcardtext
+{
+    width: 50%;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: -10px;
+}
+
+.hostingpopularcarddesc
+{
+    margin-top: -10px;
+}
+
+.hostingpopularcardgrade
+{
+    margin-top: 30px;
+}
+
+
+/* Gère le activities de la page */
+
+.activitiesmain
+{
+    width: 100%;
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-template-rows: 60px 225px 25px 30px 200px;
+    
+}
+
+    
+
+
+.activitiescard 
+{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #0000002e;
+}
+
+
+/* Un élément parent en position relative permet de placer à l'intérieur les éléments comme on le veut avec la position absolute. 
+Si l'élément parent est lui-même dans un élément flex, on rajoute flex : 1 par exemple pour appliquer. 
+Ici, cela permet de faire en sorte que les images dans les div .activitiesmaincard s'adaptent automatiquement lorsque l'on change la disposition en grid. 
+*/
+
+.activitiescardimg
+{
+    position: relative;
+    flex: 1;
+}
+
+.activitiescardimgimg
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*  Fin de la théorie */
+
+
+.activitiescardtitle
+{
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+.activitiesmainheadertitle
+{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.activitiescard01
+{
+    grid-column: 1 / 2;
+    grid-row: 2 / 6;
+}
+
+.activitiescard02
+{
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+}
+
+.activitiescard03
+{
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+}
+
+.activitiescard04
+{
+    grid-column: 3 / 4;
+    grid-row: 2 / 6;
+}
+
+.activitiescard05
+{
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+}
+
+.activitiescard06
+{
+    grid-column: 4 / 5;
+    grid-row: 4 / 6;
+}
+
+
+/* Gère le footer de la page */ 
+
+
+.footer
+{
+    background-color: #F2F2F2;
+    width: 100%;
+    margin-top: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+   
+}
+
+.footerdiv
+{
+    display: flex;
+    justify-content: space-between;
+    width: 1240px;
+    margin: auto;
+}
+
+.footeraboutlinks, .footerourhostingslinks, .footerassistlinks
+{
+    display: flex;
+    flex-direction: column; 
+}
+
+.footerourhostings
+{
+    margin-left: -100px;
+}
+
+.footerassist
+{
+    margin-right: 100px;
+}
+
+.footer h2
+{
+    font-size: 18px;
+    font-weight: 900;
+    
+}
+
+.footer a
+{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.footer a:hover
+{
+    text-decoration: underline;
+}
+
+
+
+
+
+@media screen and (max-width: 568px) 
+{
+    
+    /* Gère le header sur les appareils d'une taille max de 568px */
+    
+    .header 
+    {
+        display: block;
+        width: 100vw;
+        margin: auto;
+    }
+    
+    .headerimgsignup
+    {
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+    }
+    
+    
+    
+    .headersignup
+    {
+        margin-right: 30px;
+        margin-top: 15px
+    }
+        
+    
+    
+    .headernav
+    {
+        display: flex;
+        justify-content: space-around;
+        width: 100vw;
+        margin-top: 10px
+    }
+    
+    
+    .firstlink
+    {
+        color: #0065FC;
+        border-bottom: 2px solid #0065FC;
+        width: 50%;
+        text-align: center;
+        padding-bottom: 0px;
+    }
+    
+    .secondlink
+    {
+        width: 50%;
+        text-align: center;
+        padding-bottom: 10px;
+        border-bottom: 2px solid lightgrey;
+    }
+    
+    .secondlink:hover
+    {
+        color: #0065FC;
+        border-bottom: 2px solid #0065FC;
+    }
+    
+    
+    /* Gère le comportement du titre principal de la page sur les appareils d'une taille max de 568px */
+    
+    main 
+    {
+        width: 100vw;
+        margin-top: 30px;
+    }
+    
+    .search 
+    {
+        width: 90%;
+        margin: auto;
+    }
+    
+    .searchheader
+    {
+        margin-top: -10px;
+        margin: auto;
+    }
+    
+    
+    /* Gère le comportement du champ de recherche sur les appareils d'une taille de 568px */
+    
+    .searchformulaire
+    {
+        margin-top: 30px;
+    }
+    
+    .searchformulaireformarea
+    {
+        width: 220px;
+    }
+    
+    .searchformulairebuttoninput
+    {
+        width: 50px;
+    }
+    
+    .searchformulairebuttontextmobile
+    {
+        margin-left: -32px;
+        font-family: "Raleway";
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .searchformulairebuttontextdesktop
+    {
+        display: none;
+    }    
+    
+    /* Gère le comportement des filtres sur les appareils d'une taille de 568px */
+    
+    .searchfilters 
+    {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    
+    .searchfilterslinks 
+    {
+        margin: 5px;
+    }
+    
+    /* Gère le comportement du résultat des recherches sur les appareils d'une taille de 568px */
+    
+    .searchresultwrapicon
+    {
+        font-size: 9px;
+    }
+    
+    /* Gère le comportement de Hosting sur les appareils d'une taille de 568px */
+    
+    .hosting
+    {
+    display: flex;
+    flex-flow: column-reverse;
+    
+    }
+    
+    /* Gère le comportement de Hosting Popular sur les appareils d'une taille de 568px */
+    
+    .hostingpopularheader
+    {
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+        font-size: 16px;
+        margin-top: 15px;
+    }
+    
+    .hostingpopulartitle
+    {
+        padding-left: 10px;
+    }
+    
+    #graphic
+    {
+        font-size: 22px;
+        padding-right: 30px;
+        
+    }
+    
+    .hostingpopular
+    {
+        background-color: #F2F2F2;
+        width: 100vw;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 0px;
+    }
+    
+    .hostingpopularcardfigure 
+    {
+        display: flex;
+        background-color: white;
+        box-shadow: 0 0 20px #0000002e;
+        width: 90vw;
+        border: 5px solid white;
+        border-radius: 25px;
+        overflow: hidden;
+    
+    }
+
+
+    .hostingpopularcardfigureimg
+    {
+        object-fit: cover;
+        width: 140px;
+        height: 140px;
+    }
+
+
+    .hostingpopularcardgrade
+    {
+        margin-top: 45px
+    }
+    
+    /* Gère le main hosting sur les appareils d'une taille de 568px */
+    
+    .hostingmain
+    {
+        background-color: white;
+        border-radius: 0px;
+        margin-top: 30px;
+        padding-bottom: 0px;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        height: 100%;
+    }
+
+    .hostingmainheader
+    {
+        position: relative;
+        font-weight: bolder;
+        width: 100vw;
+        margin-right: 20px;
+        margin-bottom: -20px;
+    
+    }
+
+    .hostingmainfooter
+    {
+        position: relative;
+        font-weight: bolder;
+        width: 100vw;
+        margin-top: -25px;
+        margin-left: 20px;
+    }
+
+    .hostingmaincard
+    {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-bottom: px;
+        margin-bottom: -5px;
+        margin-right: 20px;
+    }
+
+    .hostingmaincardfigure
+    {
+        background-color: white;
+        border: 5px solid white;
+        border-radius: 25px;
+        box-shadow: 0 0 20px #0000002e;
+        width: 90vw; 
+        margin-right: px;
+        margin-left: px;
+        overflow: hidden;
+    }
+
+    .hostingmaincardfigureimg
+    {
+        width: 100%;
+	    height: 65%;
+        object-fit: cover;
+        margin-bottom: -10px;
+    }
+
+    .hostingmaincardtext
+    {
+        margin-left: 8px;
+        font-size: 14px;
+    }
+
+    .hostingmaincardfigurecaption
+    {
+        font-size: 14px;
+        font-weight: 1000;
+        margin-bottom: -15px;
+    }
+    
+    /* Gère le comportement de activities sur les appareils de 568 px */
+    
+    .activitiesmain 
+    {
+        display: flex;
+        flex-flow: column;
+        margin-left: 10px;
+    }
+    
+    .activitiescard
+    {
+        width: 90vw;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    
+    .activitiescardtitle
+    {
+        margin-left: 10px;
+        font-size: 15px;
+        font-weight: bolder;
+    }
+    
+    
+    /* Gère le footer sur les appareils d'une taille de 568px */
+    
+    .footer
+    {
+        background-color: #F2F2F2;
+        width: 100vw;
+        margin-top: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+   
+    }
+
+    .footerdiv
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100vw;
+        margin: auto;
+    }
+
+    .footeraboutlinks, .footerourhostingslinks, .footerassistlinks
+    {
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .footerabout, .footerourhostings, .footerassist
+    {
+        margin: 20px 0 0 20px;
+    }
+    
+    .footerourhostings
+    {
+        margin-left: 20px;
+    }
+
+    .footerassist
+    {
+        margin-right: 0px;
+    }
+
+    .footer h2
+    {   
+        font-size: 16px;
+        font-weight: 900;
+    }
+
+    .footer a
+    {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .footer a:hover
+    {
+        text-decoration: underline;
+    }
+
+    #bloc_page
+    {
+        width: 375px;
+    }
+    
+    
+}
+
+
+
+
+@media screen and (max-width: 1100px) 
