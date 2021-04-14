@@ -59,7 +59,7 @@ a
 
 
 
-@media screen and (min-width: 1100px)
+@media screen and (min-width: 1240px)
 {
     a[href="#hosting"]
 {
@@ -324,6 +324,14 @@ a
     top: 20px;
     left: 0px;
     font-weight: bolder;
+}
+
+@media screen and (min-width: 1240px)
+{
+    .hostingmainfooter
+    {
+        margin-left: 40px;
+    }
 }
 
 .hostingmaincard
@@ -633,10 +641,10 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
 
 
 
-@media screen and (max-width: 568px) 
+@media screen and (max-width: 1239px) 
 {
     
-    /* Gère le header sur les appareils d'une taille max de 568px */
+    /* Gère le header sur les appareils d'une taille max de 1239px */
     
     .header 
     {
@@ -695,7 +703,7 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
     }
     
     
-    /* Gère le comportement du titre principal de la page sur les appareils d'une taille max de 568px */
+    /* Gère le comportement du titre principal de la page sur les appareils d'une taille max de 1239px */
     
     main 
     {
@@ -715,8 +723,7 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
         margin: auto;
     }
     
-    
-    /* Gère le comportement du champ de recherche sur les appareils d'une taille de 568px */
+    /* Gère le comportement du champ de recherche sur les appareils d'une taille de 1239px */
     
     .searchformulaire
     {
@@ -747,7 +754,7 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
         display: none;
     }    
     
-    /* Gère le comportement des filtres sur les appareils d'une taille de 568px */
+    /* Gère le comportement des filtres sur les appareils d'une taille de 1239px */
     
     .searchfilters 
     {
@@ -761,14 +768,14 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
         margin: 5px;
     }
     
-    /* Gère le comportement du résultat des recherches sur les appareils d'une taille de 568px */
+    /* Gère le comportement du résultat des recherches sur les appareils d'une taille de 1239px */
     
     .searchresultwrapicon
     {
         font-size: 9px;
     }
     
-    /* Gère le comportement de Hosting sur les appareils d'une taille de 568px */
+    /* Gère le comportement de Hosting sur les appareils d'une taille de 1239px */
     
     .hosting
     {
@@ -777,7 +784,7 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
     
     }
     
-    /* Gère le comportement de Hosting Popular sur les appareils d'une taille de 568px */
+    /* Gère le comportement de Hosting Popular sur les appareils d'une taille de 1239px */
     
     .hostingpopularheader
     {
@@ -786,6 +793,7 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
         width: 100vw;
         font-size: 16px;
         margin-top: 15px;
+        margin-right: 0px
     }
     
     .hostingpopulartitle
@@ -837,7 +845,7 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
         margin-top: 45px
     }
     
-    /* Gère le main hosting sur les appareils d'une taille de 568px */
+    /* Gère le main hosting sur les appareils d'une taille de 1239px */
     
     .hostingmain
     {
@@ -858,7 +866,7 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
         position: relative;
         font-weight: bolder;
         width: 100vw;
-        margin-right: 20px;
+        margin-right: 0px;
         margin-bottom: -20px;
     
     }
@@ -916,7 +924,7 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
         margin-bottom: -15px;
     }
     
-    /* Gère le comportement de activities sur les appareils de 568 px */
+    /* Gère le comportement de activities sur les appareils de 1239 px */
     
     .activitiesmain 
     {
@@ -940,7 +948,7 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
     }
     
     
-    /* Gère le footer sur les appareils d'une taille de 568px */
+    /* Gère le footer sur les appareils d'une taille de 1239px */
     
     .footer
     {
@@ -998,16 +1006,8 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
     {
         text-decoration: underline;
     }
-
-    #bloc_page
-    {
-        width: 375px;
-    }
-    
     
 }
 
 
-
-
-@media screen and (max-width: 1100px) 
+  
