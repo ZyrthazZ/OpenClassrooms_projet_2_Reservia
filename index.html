@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <title>Reservia</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit:cover, minimum-scale=1.0, maximum-scale=1.0 " />
     <link rel="stylesheet" href="reservia_style.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
 </head>
@@ -39,7 +39,7 @@
                                     <input type='search' name='search' id='search' placeholder='Marseille, France' size='25' class="searchformulaireformarea" />
                                 </form>
                                 
-                                <span class="searchformulairebutton">
+                                <div class="searchformulairebutton">
                                 
                                 <input type="submit" value="" class="searchformulairebuttoninput"/>
                                 
@@ -47,16 +47,16 @@
                                 
                                 <p class="searchformulairebuttontextmobile"><i class="fas fa-search"></i></p>
                                 
-                                </span>
+                                </div>
                         </div>                                                                                                                                                                    
                     
                         <h2 class="searchfilterstitle">Filtres</h2>
                         <div class="searchfilters">
                          
-                            <span class="searchfilterslinks"> <a class="searchfilterslinkseco" href="#" > <div class="searchfilterslinkssvg"> <i class="fas fa-money-bill-wave" id="eco"></i> </div> <span class="searchfilterslinkstext"> Économique </span></a> </span> 
-                            <span class="searchfilterslinks"> <a class="searchfilterslinksfamily" href="#" > <div class="searchfilterslinkssvg"> <i class="fas fa-child" id="child"></i> </div> <span class="searchfilterslinkstext"> Familial </span></a> </span>
-                            <span class="searchfilterslinks"> <a class="searchfilterslinkslove" href="#" > <div class="searchfilterslinkssvg"> <i class="fas fa-heart" id="love"></i> </div> <span class="searchfilterslinkstext"> Romantique </span></a> </span>
-                            <span class="searchfilterslinks"> <a class="searchfilterslinkspet" href="#" > <div class="searchfilterslinkssvg"> <i class="fas fa-dog" id="dog"></i> </div> <span class="searchfilterslinkstext"> Animaux autorisés </span></a> </span>
+                            <span class="searchfilterslinks"> <a class="searchfilterslinkseco" href="#" > <span class="searchfilterslinkssvg"> <i class="fas fa-money-bill-wave" id="eco"></i> </span> <span class="searchfilterslinkstext"> Économique </span></a> </span> 
+                            <span class="searchfilterslinks"> <a class="searchfilterslinksfamily" href="#" > <span class="searchfilterslinkssvg"> <i class="fas fa-child" id="child"></i> </span> <span class="searchfilterslinkstext"> Familial </span></a> </span>
+                            <span class="searchfilterslinks"> <a class="searchfilterslinkslove" href="#" > <span class="searchfilterslinkssvg"> <i class="fas fa-heart" id="love"></i> </span> <span class="searchfilterslinkstext"> Romantique </span></a> </span>
+                            <span class="searchfilterslinks"> <a class="searchfilterslinkspet" href="#" > <span class="searchfilterslinkssvg"> <i class="fas fa-dog" id="dog"></i> </span> <span class="searchfilterslinkstext"> Animaux autorisés </span></a> </span>
                         </div>
                     
                     <br/>
@@ -89,9 +89,7 @@
                                 <img class="hostingmaincardfigureimg" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Vue sur la rue depuis une auberge de jeunesse" />
                                 
                                 <div class="hostingmaincardtext">
-                                <figcaption class="hostingmaincardfigurecaption">
-                                    <h3 class="hostingmaincardfigurecaptiontitle">Auberge la Cannebière</h3>
-                                </figcaption>
+                                    <h3 class="hostingmaincardfiguretitle">Auberge la Cannebière</h3>
                             <p class="hostingmaincarddesc"> Nuit à partir de  <strong class="hostingmaincarddescprice">25€</strong> </p>
                                 
                             <div class="hostingmaincardgrade"> 
@@ -115,9 +113,7 @@
                                 
                                 
                                 <div class="hostingmaincardtext">
-                                <figcaption class="hostingmaincardfigurecaption">
-                                    <h3 class="hostingmaincardfigurecaptiontitle">Hôtel du port</h3>
-                                </figcaption>
+                                    <h3 class="hostingmaincardfiguretitle">Hôtel du port</h3>
                             <p class="hostingmaincarddesc"> Nuit à partir de  <strong class="hostingmaincarddescprice">52€</strong> </p>
                             
                             <div class="hostingmaincardgrade">
@@ -140,9 +136,7 @@
                                 <img class="hostingmaincardfigureimg" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Chambre d'hôtel à l'ambiance tamisée" />
                                 
                                 <div class="hostingmaincardtext">
-                                <figcaption class="hostingmaincardfigurecaption">
-                                    <h3 class="hostingmaincardfigurecaptiontitle">Hôtel Les mouettes</h3>
-                                </figcaption>
+                                    <h3 class="hostingmaincardfiguretitle">Hôtel Les mouettes</h3>
                             <p class="hostingmaincarddesc"> Nuit à partir de  <strong class="hostingmaincarddescprice">76€</strong> </p>
                             
                             <div class="hostingmaincardgrade">
@@ -165,9 +159,7 @@
                                 <img class="hostingmaincardfigureimg" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Chambre d'hôtel sur le thème de la mer" />
                                 
                                 <div class="hostingmaincardtext">
-                                <figcaption class="hostingmaincardfigurecaption">
-                                    <h3 class="hostingmaincardfigurecaptiontitle">Hôtel de la mer</h3>
-                                </figcaption>
+                                    <h3 class="hostingmaincardfiguretitle">Hôtel de la mer</h3>
                             <p class="hostingmaincarddesc"> Nuit à partir de  <strong class="hostingmaincarddescprice">46€</strong> </p>
                             
                             <div class="hostingmaincardgrade">
@@ -190,9 +182,7 @@
                                 <img class="hostingmaincardfigureimg" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Chambre d'auberge à la décoration rustique type bois" />
                                 
                                 <div class="hostingmaincardtext">
-                                <figcaption class="hostingmaincardfigurecaption">
-                                    <h3 class="hostingmaincardfigurecaptiontitle">Auberge le panier</h3>
-                                </figcaption>
+                                    <h3 class="hostingmaincardfiguretitle">Auberge le panier</h3>
                             <p class="hostingmaincarddesc"> Nuit à partir de  <strong class="hostingmaincarddescprice">23€</strong> </p>
                             
                             <div class="hostingmaincardgrade">
@@ -215,9 +205,7 @@
                                 <img class="hostingmaincardfigureimg" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Chambre d'hôtel à la décoration simple" />
                                 
                                 <div class="hostingmaincardtext">
-                                <figcaption class="hostingmaincardfigurecaption">
-                                    <h3 class="hostingmaincardfigurecaptiontitle">Hôtel chez Amina</h3>
-                                </figcaption>
+                                    <h3 class="hostingmaincardfiguretitle">Hôtel chez Amina</h3>
                             <p class="hostingmaincarddesc"> Nuit à partir de  <strong class="hostingmaincarddescprice">96€</strong> </p>
                             
                             <div class="hostingmaincardgrade">
@@ -256,9 +244,9 @@
                                 <img class="hostingpopularcardfigureimg" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Chambre d'hôtel luxe murs verts" />
                                 
                                 <div class="hostingpopularcardtext">
-                                <figcaption class="hostingpopularcardfigurecaption">
-                                    <h3 class="hostingpopularcardfigurecaptiontitle">Hôtel Le soleil du matin</h3>
-                                </figcaption>
+                                
+                                    <h3 class="hostingpopularcardfiguretitle">Hôtel Le soleil du matin</h3>
+                                
                             <p class="hostingpopularcarddesc"> Nuit à partir de  <strong class="hostingpopularcarddescprice">128€</strong> </p>
                             
                             <div class="hostingpopularcardgrade">
@@ -281,9 +269,9 @@
                                 <img class="hostingpopularcardfigureimg" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Chambre d'hôtes style cosy" />
                                 
                                 <div class="hostingpopularcardtext">
-                                <figcaption class="hostingpopularcardfigurecaption">
-                                    <h3 class="hostingpopularcardfigurecaptiontitle">Au coeur de l'eau<br/>Chambres d'hôtes</h3>
-                                </figcaption>
+                                
+                                    <h3 class="hostingpopularcardfiguretitle">Au coeur de l'eau Chambres d'hôtes</h3>
+                                
                             <p class="hostingpopularcarddesc"> Nuit à partir de  <strong class="hostingpopularcarddescprice">71€</strong> </p>
                             
                             <div class="hostingpopularcardgrade">
@@ -306,9 +294,9 @@
                                 <img class="hostingpopularcardfigureimg" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Chambre d'hôtel couleur blanche" />
                                 
                                 <div class="hostingpopularcardtext">
-                                <figcaption class="hostingpopularcardfigurecaption">
-                                    <h3 class="hostingpopularcardfigurecaptiontitle">Hôtel Tout bleu et Blanc</h3>
-                                </figcaption>
+                                
+                                    <h3 class="hostingpopularcardfiguretitle">Hôtel Tout bleu et Blanc</h3>
+                                
                             <p class="hostingpopularcarddesc"> Nuit à partir de  <strong class="hostingpopularcarddescprice">68€</strong> </p>
                             
                             <div class="hostingpopularcardgrade">
@@ -400,9 +388,7 @@
             <footer class="footer"> <!-- Footer, contenant 'À propos', 'Nos hébergements' et 'Assistance'-->
                 <div class="footerdiv">
                 <section class="footerabout">
-                    <header class="footeraboutheader">
-                        <h2 class="footeraboutheadertitle">À propos</h2>
-                    </header>
+                        <h2 class="footerabouttitle">À propos</h2>
                     <div class="footeraboutlinks">
                         <a class="footeraboutlinkslinks" href="#">Fonctionnement du site</a> 
                         <a class="footeraboutlinkslinks" href="#">Conditions générales de vente</a> 
@@ -411,9 +397,7 @@
                 </section>
                 
                 <section class="footerourhostings">
-                    <header class="footerourhostingsheader">
-                        <h2 class="footerourhostingsheadertitle">Nos hébergements</h2>
-                    </header>
+                        <h2 class="footerourhostingsrtitle">Nos hébergements</h2>
                     <div class="footerourhostingslinks">
                         <a class="footerourhostingslinkslinks" href="#">Charte qualité</a> 
                         <a class="footerourhostingslinkslinks" href="#">Soumettre votre hôtel</a>
@@ -421,9 +405,7 @@
                 </section>
                 
                 <section class="footerassist">
-                    <header class="footerassistheader">
-                        <h2 class="footerassistheadertitle">Assistance</h2>
-                    </header>
+                        <h2 class="footerassisttitle">Assistance</h2>
                     <div class="footerassistlinks">
                         <a class="footerassistlinkslinks" href="#">Centre d'aide</a> 
                         <a class="footerassistlinkslinks" href="#">Nous contacter</a>

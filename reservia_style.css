@@ -175,7 +175,7 @@ a
 }
 
 
-@media screen and (min-width: 1100px)
+@media screen and (min-width: 1240px)
 {
     .searchformulairebuttontextmobile
 {
@@ -307,7 +307,7 @@ a
     display: flex;
     flex-flow: wrap;
     width: 65%;
-    height: 515px;
+    height: 515px; /* Essayer auto */
 }
 
 .hostingmainheader
@@ -370,12 +370,11 @@ a
     font-size: 14px;
 }
 
-.hostingmaincardfigurecaption
+.hostingmaincardfiguretitle
 {
-    font-size: 14px;
-    font-weight: 1000;
-    padding-top: -px;
-    margin-bottom: -15px;
+    font-size: 16px;
+    font-weight: 900;
+    margin-bottom: -8px;
 }
 
 .hostingmaincarddesc
@@ -842,7 +841,7 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
 
     .hostingpopularcardgrade
     {
-        margin-top: 45px
+        margin-top: 50px
     }
     
     /* Gère le main hosting sur les appareils d'une taille de 1239px */
@@ -886,7 +885,6 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
         flex-direction: column;
         margin-top: 0px;
         margin-left: 0px;
-        margin-bottom: px;
         margin-bottom: -5px;
         margin-right: 20px;
     }
@@ -898,8 +896,6 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
         border-radius: 25px;
         box-shadow: 0 0 20px #0000002e;
         width: 90vw; 
-        margin-right: px;
-        margin-left: px;
         overflow: hidden;
     }
 
@@ -917,10 +913,10 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
         font-size: 14px;
     }
 
-    .hostingmaincardfigurecaption
+    .hostingmaincardfiguretitle
     {
-        font-size: 14px;
-        font-weight: 1000;
+        font-size: 16px;
+        font-weight: 900;
         margin-bottom: -15px;
     }
     
@@ -1009,5 +1005,5 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
     
 }
 
+/* Faire un nouveau breakpoint pour tablette de 1024 à 1240 */
 
-  
