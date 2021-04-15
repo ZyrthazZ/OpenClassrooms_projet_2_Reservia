@@ -34,7 +34,7 @@ main
 
 .header
 {
-        width: 1240px;
+        max-width: 1240px;
         margin: auto;
         display: flex;
         flex-direction: row;
@@ -46,6 +46,7 @@ main
 {
     color: #0065FC;
     font-weight: bold;
+    margin-right: 50%;
 }
 
 
@@ -57,7 +58,7 @@ a
     text-decoration: none;
 }
 
-
+/* Gère le header sur les appareils d'une taille min de 1240px */ 
 
 @media screen and (min-width: 1240px)
 {
@@ -80,7 +81,8 @@ a
 {
     position: relative;
     top: -29px;
-    right: -1070px
+    right: -1070px;
+    margin-right: 100px;
 }
 
 
@@ -96,7 +98,63 @@ a
 
 }
 
+/* Gère le header sur les appareils d'une taille max de 1239px */ 
 
+@media screen and (max-width: 1239px)
+{
+    .header 
+{
+    display: block;
+    width: 100vw;
+    margin: auto;
+}
+    
+.headerimgsignup
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+}
+    
+.headersignup
+{
+    margin-right: 30px;
+    margin-top: 15px;
+}
+    
+.headernav
+{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    margin-top: 10px;
+}
+    
+.firstlink
+{
+    color: #0065FC;
+    border-bottom: 2px solid #0065FC;
+    width: 50%;
+    text-align: center;
+    padding-bottom: 0px;
+}
+    
+.secondlink
+{
+    width: 50%;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid lightgrey;
+}
+    
+.secondlink:hover
+{
+    color: #0065FC;
+    border-bottom: 2px solid #0065FC;
+}
+}
+
+   
 /* Gère le titre principal de la page */
 
 .searchheader
@@ -121,7 +179,6 @@ a
 {
     display: flex;
     flex-direction: row;
-    width: 100vw;
 }
 
 .searchformulairemap
@@ -133,7 +190,6 @@ a
     border-radius: 15px 0 0 15px;
 }
 
-
 .searchformulaireformarea
 {
     width: 250px;
@@ -144,9 +200,7 @@ a
     font-family: "Raleway";
     font-size: 18px;
     font-weight: bold;
-    
 }
-
 
 .searchformulairebutton
 {
@@ -160,7 +214,6 @@ a
     font-size: 16px;
     font-weight: bold;
     color: white;
-    
 }
 
 .searchformulairebuttoninput
@@ -175,7 +228,7 @@ a
 }
 
 
-@media screen and (min-width: 1240px)
+@media screen and (min-width: 850px)
 {
     .searchformulairebuttontextmobile
 {
@@ -192,16 +245,13 @@ a
     flex-direction: row;
     justify-content: space-between;
     width: 900px;
-    
 }
 
 .searchfilterstitle
 {
-    
     font-size: 20px;
     font-weight: bold;
 }
-
 
 .searchfilterslinks
 {
@@ -209,7 +259,8 @@ a
    flex-direction: row;
    justify-content: space-between;
    align-items: center;
-    width: -moz-fit-content;
+   margin-right: auto;
+   width: -moz-fit-content;
 }
 
 .searchfilterslinkseco, .searchfilterslinksfamily, .searchfilterslinkslove, .searchfilterslinkspet
@@ -219,14 +270,12 @@ a
     justify-content: center;
 }
 
-
 #eco, #child, #love, #dog
 {
     padding-top: 10px;
     font-size: 18px;
     color: #0065FC;
 }
-
 
 .searchfilterslinkstext
 {
@@ -246,10 +295,9 @@ a
     background-color: #DEEBFF;
     border-radius: 20px 20px 20px 20px;
     margin-right: -14px;
-    
 }
 
-@media screen and (min-width: 1100px)
+@media screen and (min-width: 1077px)
 {
     .searchfilterstitle
     {
@@ -293,9 +341,6 @@ a
 }
 
 
-
-
-
 /* Gère les "cards" de "Hébergements à Marseille */
 
 .hostingmain
@@ -303,42 +348,57 @@ a
     background-color: #F2F2F2;
     border-radius: 20px;
     margin-top: 40px;
-    padding-bottom: 80px;
+    padding-top: 65px;
+    padding-bottom: 50px;
+    padding-right: 30px;
     display: flex;
     flex-flow: wrap;
     width: 65%;
-    height: 515px; /* Essayer auto */
+    height: auto; 
+}
+
+@media screen and (max-width: 1077px)
+{
+    .hostingmain
+    {
+        padding-bottom: 50px;
+    }
 }
 
 .hostingmainheader
 {
     position: absolute;
     font-weight: bolder;
-    margin-left: 50px;
-    margin-bottom: 0px;
+    top: 450px;
+    margin-left: 40px;
 }
 
-.hostingmainfooter
-{
-    position: relative;
-    top: 20px;
-    left: 0px;
-    font-weight: bolder;
-}
-
-@media screen and (min-width: 1240px)
+@media screen and (max-width: 1077px)
 {
     .hostingmainfooter
     {
+        position: absolute;
+        top: 1200px;
         margin-left: 40px;
     }
 }
 
+@media screen and (min-width: 1078px)
+{
+    .hostingmainfooter
+{
+    position: absolute;
+    font-weight: bolder;
+    top: 1000px;
+    margin-left: 40px;
+}
+}
+
+
 .hostingmaincard
 {
-    margin-top: 60px;
-    margin-left: 20px;
-    margin-bottom: -25px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: column;
 }
@@ -349,7 +409,7 @@ a
     border: 5px solid white;
     border-radius: 25px;
     box-shadow: 0 0 20px #0000002e;
-    width: 210px; 
+    width: 200px; 
     height: 180px;
     margin-right: 5px;
     margin-left: 15px;
@@ -425,7 +485,7 @@ a
     display: flex;
     flex-flow: column;
     margin-top: 40px;
-    padding-bottom: 50px;
+    padding-bottom: 0px;
     border-radius: 20px;
 }
 
@@ -445,13 +505,22 @@ a
     display: flex;
     background-color: white;
     box-shadow: 0 0 20px #0000002e;
-    width: 310px;
-    margin-left: -0px;    /* POURQUOI CA FAIT CA??? */
-    margin-left: 25px;    /* POURQUOI CA FAIT CA??? */
+    width: auto;
+    height: auto;
+    margin-left: 10px;    
+    margin-right: 10px;
     border: 3px solid white;
     border-radius: 25px;
     overflow: hidden;
-    
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1077px)
+{
+    .hostingpopularcardfigure 
+    {
+        margin-bottom: 80px;
+    }
 }
 
 
@@ -459,7 +528,7 @@ a
 {
     object-fit: cover;
     width: 110px;
-    height: 120px;
+    height: 140px;
 }
 
 .hostingpopularcardtext
@@ -472,12 +541,31 @@ a
 
 .hostingpopularcarddesc
 {
-    margin-top: -10px;
+    margin-top: auto;
 }
 
 .hostingpopularcardgrade
 {
     margin-top: 30px;
+}
+
+@media screen and (max-width: 1077px)
+{
+       .hostingpopularcardfiguretitle
+       {
+           font-size: 15px;
+           margin-bottom: 0px;
+       }
+       
+       .hostingpopularcarddesc
+       {
+           margin-top: 0;
+       }
+       
+       .hostingpopularcardgrade
+       {
+           margin-top: 10px
+       }
 }
 
 
@@ -491,11 +579,7 @@ a
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 30px;
     grid-template-rows: 60px 225px 25px 30px 200px;
-    
 }
-
-    
-
 
 .activitiescard 
 {
@@ -506,7 +590,6 @@ a
     border-radius: 20px;
     box-shadow: 0 0 20px #0000002e;
 }
-
 
 /* Un élément parent en position relative permet de placer à l'intérieur les éléments comme on le veut avec la position absolute. 
 Si l'élément parent est lui-même dans un élément flex, on rajoute flex : 1 par exemple pour appliquer. 
@@ -535,6 +618,14 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
     margin-left: 10px;
     font-size: 20px;
     font-weight: bolder;
+}
+
+@media screen and (max-width: 1077px)
+{
+    .activitiesmainheadertitle
+    {
+        font-size: 19px;
+    }
 }
 
 
@@ -591,14 +682,13 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
     margin-top: 50px;
     padding-top: 25px;
     padding-bottom: 25px;
-   
 }
 
 .footerdiv
 {
     display: flex;
     justify-content: space-between;
-    width: 1240px;
+    max-width: 1240px;
     margin: auto;
 }
 
@@ -622,7 +712,6 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
 {
     font-size: 18px;
     font-weight: 900;
-    
 }
 
 .footer a
@@ -637,72 +726,13 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
 }
 
 
+/* Gère le comportement de la page sur des appareils d'une taille max de 850px */
 
-
-
-@media screen and (max-width: 1239px) 
+@media screen and (max-width: 850px) 
 {
     
-    /* Gère le header sur les appareils d'une taille max de 1239px */
-    
-    .header 
-    {
-        display: block;
-        width: 100vw;
-        margin: auto;
-    }
-    
-    .headerimgsignup
-    {
-        display: flex;
-        justify-content: space-between;
-        width: 100vw;
-    }
-    
-    
-    
-    .headersignup
-    {
-        margin-right: 30px;
-        margin-top: 15px
-    }
-        
-    
-    
-    .headernav
-    {
-        display: flex;
-        justify-content: space-around;
-        width: 100vw;
-        margin-top: 10px
-    }
-    
-    
-    .firstlink
-    {
-        color: #0065FC;
-        border-bottom: 2px solid #0065FC;
-        width: 50%;
-        text-align: center;
-        padding-bottom: 0px;
-    }
-    
-    .secondlink
-    {
-        width: 50%;
-        text-align: center;
-        padding-bottom: 10px;
-        border-bottom: 2px solid lightgrey;
-    }
-    
-    .secondlink:hover
-    {
-        color: #0065FC;
-        border-bottom: 2px solid #0065FC;
-    }
-    
-    
-    /* Gère le comportement du titre principal de la page sur les appareils d'une taille max de 1239px */
+                                                                                                                                                                                                   
+    /* Gère le comportement du titre principal de la page sur les appareils d'une taille max de 850px */
     
     main 
     {
@@ -722,7 +752,7 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
         margin: auto;
     }
     
-    /* Gère le comportement du champ de recherche sur les appareils d'une taille de 1239px */
+    /* Gère le comportement du champ de recherche sur les appareils d'une taille max de 850px */
     
     .searchformulaire
     {
@@ -753,7 +783,7 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
         display: none;
     }    
     
-    /* Gère le comportement des filtres sur les appareils d'une taille de 1239px */
+    /* Gère le comportement des filtres sur les appareils d'une taille max de 850px */
     
     .searchfilters 
     {
@@ -767,23 +797,22 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
         margin: 5px;
     }
     
-    /* Gère le comportement du résultat des recherches sur les appareils d'une taille de 1239px */
+    /* Gère le comportement du résultat des recherches sur les appareils d'une taille max de 850px */
     
     .searchresultwrapicon
     {
         font-size: 9px;
     }
     
-    /* Gère le comportement de Hosting sur les appareils d'une taille de 1239px */
+    /* Gère le comportement de Hosting sur les appareils d'une taille max de 850px */
     
     .hosting
     {
     display: flex;
     flex-flow: column-reverse;
-    
     }
     
-    /* Gère le comportement de Hosting Popular sur les appareils d'une taille de 1239px */
+    /* Gère le comportement de Hosting Popular sur les appareils d'une taille max de 850px */
     
     .hostingpopularheader
     {
@@ -804,13 +833,13 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
     {
         font-size: 22px;
         padding-right: 30px;
-        
     }
     
     .hostingpopular
     {
         background-color: #F2F2F2;
         width: 100vw;
+        height: auto;
         display: flex;
         flex-flow: column;
         justify-content: space-around;
@@ -827,9 +856,8 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
         border: 5px solid white;
         border-radius: 25px;
         overflow: hidden;
-    
+        margin-bottom: 20px;
     }
-
 
     .hostingpopularcardfigureimg
     {
@@ -838,19 +866,18 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
         height: 140px;
     }
 
-
     .hostingpopularcardgrade
     {
-        margin-top: 50px
+        margin-top: 50px;
     }
     
-    /* Gère le main hosting sur les appareils d'une taille de 1239px */
+    /* Gère le main hosting sur les appareils d'une taille max de 850px */
     
     .hostingmain
     {
         background-color: white;
         border-radius: 0px;
-        margin-top: 30px;
+        margin-top: -40px;
         padding-bottom: 0px;
         display: flex;
         flex-flow: column;
@@ -865,9 +892,8 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
         position: relative;
         font-weight: bolder;
         width: 100vw;
-        margin-right: 0px;
-        margin-bottom: -20px;
-    
+        top: 0px;
+        margin-right: 20px;
     }
 
     .hostingmainfooter
@@ -875,8 +901,9 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
         position: relative;
         font-weight: bolder;
         width: 100vw;
-        margin-top: -25px;
-        margin-left: 20px;
+        top: 0px;
+        margin-right: 20px;
+        
     }
 
     .hostingmaincard
@@ -920,13 +947,13 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
         margin-bottom: -15px;
     }
     
-    /* Gère le comportement de activities sur les appareils de 1239 px */
+    /* Gère le comportement de activities sur les appareils d'une taille max de 850 px */
     
     .activitiesmain 
     {
         display: flex;
         flex-flow: column;
-        margin-left: 10px;
+        margin-left: 30px;
     }
     
     .activitiescard
@@ -944,7 +971,7 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
     }
     
     
-    /* Gère le footer sur les appareils d'une taille de 1239px */
+    /* Gère le footer sur les appareils d'une taille max de 850px */
     
     .footer
     {
@@ -953,7 +980,6 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
         margin-top: 0px;
         padding-top: 0px;
         padding-bottom: 0px;
-   
     }
 
     .footerdiv
@@ -1005,5 +1031,9 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
     
 }
 
-/* Faire un nouveau breakpoint pour tablette de 1024 à 1240 */
+/* BREAKPOINTS : 
+   --> 850px = MOBILE
+   850px --> 1077px = TABLETTE
+   1078px --> ..... = DESKTOP
+*/
 
