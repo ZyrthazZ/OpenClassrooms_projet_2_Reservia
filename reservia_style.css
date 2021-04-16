@@ -16,6 +16,14 @@ body
     
 }
 
+
+body
+{
+    width: 100%;
+    margin: 0px;
+    overflow-x: hidden; 
+}    
+
 h1
 {
     
@@ -244,7 +252,6 @@ a
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 900px;
 }
 
 .searchfilterstitle
@@ -356,6 +363,11 @@ a
     width: 65%;
     height: auto; 
 }
+
+
+
+
+
 
 @media screen and (max-width: 1077px)
 {
@@ -571,16 +583,19 @@ a
 
 /* Gère le activities de la page */
 
-.activitiesmain
+@media screen and (min-width: 850px)
 {
-    width: 100%;
-    display: grid;
-    margin-top: 30px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 30px;
-    grid-template-rows: 60px 225px 25px 30px 200px;
+    .activitiesmain
+    {
+        width: 100%;
+        display: grid;
+        margin-top: 30px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 30px;
+        grid-template-rows: 60px 225px 25px 30px 200px;
+    }
+    
 }
-
 .activitiescard 
 {
     display: flex;
@@ -629,49 +644,51 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
 }
 
 
-.activitiesmainheadertitle
+@media screen and (min-width: 850px)
 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
+    .activitiesmainheadertitle
+    {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    
+    .activitiescard01
+    {
+        grid-column: 1 / 2;
+        grid-row: 2 / 6;
+    }
+    
+    .activitiescard02
+    {
+        grid-column: 2 / 3;
+        grid-row: 2 / 4;
+    }
+    
+    .activitiescard03
+    {
+        grid-column: 2 / 3;
+        grid-row: 5 / 6;
+    }
+    
+    .activitiescard04
+    {
+        grid-column: 3 / 4;
+        grid-row: 2 / 6;
+    }
+    
+    .activitiescard05
+    {
+        grid-column: 4 / 5;
+        grid-row: 2 / 3;
+    }
+    
+    .activitiescard06
+    {
+        grid-column: 4 / 5;
+        grid-row: 4 / 6;
+    }
+
 }
-
-.activitiescard01
-{
-    grid-column: 1 / 2;
-    grid-row: 2 / 6;
-}
-
-.activitiescard02
-{
-    grid-column: 2 / 3;
-    grid-row: 2 / 4;
-}
-
-.activitiescard03
-{
-    grid-column: 2 / 3;
-    grid-row: 5 / 6;
-}
-
-.activitiescard04
-{
-    grid-column: 3 / 4;
-    grid-row: 2 / 6;
-}
-
-.activitiescard05
-{
-    grid-column: 4 / 5;
-    grid-row: 2 / 3;
-}
-
-.activitiescard06
-{
-    grid-column: 4 / 5;
-    grid-row: 4 / 6;
-}
-
-
 /* Gère le footer de la page */ 
 
 
@@ -739,6 +756,12 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
         width: 100vw;
         margin-top: 30px;
     }
+    
+    body
+    {
+        width: 100%;
+        margin: 0px;
+    }    
     
     .search 
     {
@@ -821,7 +844,8 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
         width: 100vw;
         font-size: 16px;
         margin-top: 15px;
-        margin-right: 0px
+        margin-right: 0px;
+        margin-left: 0px;
     }
     
     .hostingpopulartitle
@@ -871,105 +895,113 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
         margin-top: 50px;
     }
     
+    
     /* Gère le main hosting sur les appareils d'une taille max de 850px */
+    
+    .hostingmainheader
+    {
+        position:unset;
+        font-weight: bolder;
+        width: 100vw;
+        margin-right: 0px;
+        margin-left: 30px;
+    }
+    
+    .hostingmainfooter
+    {
+        position: unset;
+        font-weight: bolder;
+        width: 100vw;
+        margin-right: 0px;
+        margin-left: 40px;
+    }
     
     .hostingmain
     {
         background-color: white;
         border-radius: 0px;
-        margin-top: -40px;
-        padding-bottom: 0px;
+        margin-top: 0px;
+        padding-right: 0px;
         display: flex;
-        flex-flow: column;
         justify-content: space-around;
-        align-items: center;
+        align-content: center;
         width: 100vw;
         height: 100%;
     }
-
-    .hostingmainheader
-    {
-        position: relative;
-        font-weight: bolder;
-        width: 100vw;
-        top: 0px;
-        margin-right: 20px;
-    }
-
-    .hostingmainfooter
-    {
-        position: relative;
-        font-weight: bolder;
-        width: 100vw;
-        top: 0px;
-        margin-right: 20px;
-        
-    }
-
-    .hostingmaincard
-    {
-        display: flex;
-        flex-direction: column;
-        margin-top: 0px;
-        margin-left: 0px;
-        margin-bottom: -5px;
-        margin-right: 20px;
-    }
-
+    
     .hostingmaincardfigure
     {
         background-color: white;
         border: 5px solid white;
         border-radius: 25px;
         box-shadow: 0 0 20px #0000002e;
-        width: 90vw; 
+        width: 40vw; 
         overflow: hidden;
     }
-
-    .hostingmaincardfigureimg
-    {
-        width: 100%;
-	    height: 65%;
-        object-fit: cover;
-        margin-bottom: -10px;
-    }
-
-    .hostingmaincardtext
-    {
-        margin-left: 8px;
-        font-size: 14px;
-    }
-
-    .hostingmaincardfiguretitle
-    {
-        font-size: 16px;
-        font-weight: 900;
-        margin-bottom: -15px;
-    }
     
-    /* Gère le comportement de activities sur les appareils d'une taille max de 850 px */
+    /* Gère le activities sur les appareils d'une taille max de 850px */
     
     .activitiesmain 
     {
-        display: flex;
-        flex-flow: column;
+        display: grid;
+        width: 90vw;
+        height: auto;
         margin-left: 30px;
+        margin-bottom: 30px;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 30px;
+        grid-template-rows: 60px 250px 250px 250px;
+        grid-row-gap: 30px;
     }
-    
+        
     .activitiescard
     {
-        width: 90vw;
-        height: 200px;
-        margin-bottom: 20px;
+        width: 100%;
+        height: auto;
+        margin-bottom: 0px;
     }
     
-    .activitiescardtitle
+    .activitiesmainheadertitle
     {
-        margin-left: 10px;
-        font-size: 15px;
-        font-weight: bolder;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
     }
     
+    .activitiescard01
+    {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    
+    .activitiescard02
+    {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    
+    .activitiescard03
+    {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+    
+    .activitiescard04
+    {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+    
+    .activitiescard05
+    {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+    
+    .activitiescard06
+    {
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+    }
     
     /* Gère le footer sur les appareils d'une taille max de 850px */
     
@@ -1030,6 +1062,123 @@ Ici, cela permet de faire en sorte que les images dans les div .activitiesmainca
     }
     
 }
+
+
+
+@media screen and (max-width: 520px) 
+{
+    /* Gère le main hosting sur les appareils d'une taille max de 520px */
+    
+    .hostingmain
+    {
+        background-color: white;
+        border-radius: 0px;
+        margin-top: -40px;
+        padding-bottom: 0px;
+        padding-right: 0px;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        height: 100%;
+    }
+    
+    .hostingmainheader
+    {
+        position: relative;
+        font-weight: bolder;
+        width: 100vw;
+        top: 0px;
+        margin-right: 0px;
+        margin-left: 30px;
+    }
+    
+    .hostingmainfooter
+    {
+        position: relative;
+        font-weight: bolder;
+        width: 100vw;
+        top: 0px;
+        margin-right: 0px;
+        margin-left: 40px;
+    }
+    
+    .hostingmaincard
+    {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-bottom: -5px;
+        margin-right: 10px;
+    }
+    
+    .hostingmaincardfigure
+    {
+        background-color: white;
+        border: 5px solid white;
+        border-radius: 25px;
+        box-shadow: 0 0 20px #0000002e;
+        width: 90vw; 
+        overflow: hidden;
+    }
+    
+    .hostingmaincardfigureimg
+    {
+        width: 100%;
+        height: 65%;
+        object-fit: cover;
+        margin-bottom: -10px;
+    }
+    
+    .hostingmaincardtext
+    {
+        margin-left: 8px;
+        font-size: 14px;
+    }
+    
+    .hostingmaincardfiguretitle
+    {
+        font-size: 16px;
+        font-weight: 900;
+        margin-bottom: -15px;
+    }
+    
+    
+    /* Gère le comportement de activities sur les appareils d'une taille max de 520 px */
+    
+    .activitiesmain 
+    {
+        display: flex;
+        flex-flow: column;
+        margin-left: 0px;
+        width: 100vw; 
+    }
+        
+    .activitiescard
+    {
+        width: 90vw;
+        height: 200px;
+        margin-bottom: 20px;
+        align-self: center;
+    }
+        
+    .activitiescardtitle
+    {
+        margin-left: 10px;
+        font-size: 15px;
+        font-weight: bolder;
+    }
+        
+    .activitiesmainheadertitle
+    {
+        align-items: flex-start;
+        padding-left: 20px;
+        padding-top: 30px;        
+    }
+}
+
 
 /* BREAKPOINTS : 
    --> 850px = MOBILE
