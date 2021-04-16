@@ -347,6 +347,21 @@ a
     font-size: 12px;
 }
 
+@media screen and (min-width: 850px)
+{
+    .search 
+    {
+        margin-left: 50px
+    }
+}
+
+@media screen and (min-width: 1240px)
+{
+    .search 
+    {
+        margin-left: 0px
+    }
+}
 
 /* Gère les "cards" de "Hébergements à Marseille */
 
