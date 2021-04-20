@@ -124,6 +124,11 @@ a
     width: 100vw;
 }
     
+.headerimg 
+{
+    margin-left: 20px;
+}
+
 .headersignup
 {
     margin-right: 30px;
@@ -424,9 +429,9 @@ a
 
 .hostingmaincard
 {
+    display: flex;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
     flex-direction: column;
 }
 
@@ -506,11 +511,11 @@ a
 
 .hostingpopular
 {
+    display: flex;
+    flex-flow: column;
     background-color: #F2F2F2;
     width: 30%;
     height: 100%;
-    display: flex;
-    flex-flow: column;
     margin-top: 40px;
     padding-bottom: 0px;
     border-radius: 20px;
